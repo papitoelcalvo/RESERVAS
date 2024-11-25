@@ -1,0 +1,117 @@
+.App2{
+    display: flex;
+}
+
+.perfile{
+    width: 50%;
+    border-radius: 100%;
+}
+
+.lateral{
+    background-color: black;
+    width: 16%;
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo{
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 25px;
+    height: 30%;
+}
+
+.logo > p{
+    margin: 10px 0 0px 0;
+}
+
+.menu{
+    height: 65%;
+    font-size: 20px;
+}
+
+.menu > ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu > ul > li{
+    margin: 5px 10px 5px 10px;
+}
+
+.foot{
+    height: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.horizontal{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    background-color: black;
+    width: 98%;
+    padding: 0 16px;
+    height: 6%;
+    font-size: 25px;
+}
+
+.derecha{
+    width: 84%;
+    height: 100vh;
+}
+
+
+  
+  .menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu ul li {
+    position: relative;
+  }
+  
+  .menu ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .menu ul li a:hover {
+    background-color: #575757;
+  }
+  
+  .menu ul ul {
+    display: none;
+  }
+  
+  .menu ul ul.show {
+    display: block;
+  }
+  
+  .foot {
+    text-align: center;
+  }
+
+  .op{
+    cursor: pointer;
+  }
+
+  .resto{
+    height: 92%;
+    width: 99%;
+    margin: 10px;
+  }
+  
+
+  

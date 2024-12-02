@@ -1,10 +1,17 @@
 import React, { useState } from 'react';
 import '../css/MenuLa.css';
 import { IoSettingsSharp } from 'react-icons/io5';
+import { FaSun, FaMoon } from 'react-icons/fa';
 import user from '../assets/user.png';
+import CustomizedSwitches from './CustomizedSwitches';
+import { MdDashboard, MdPayments,MdDesignServices } from "react-icons/md";
+import { FaUser,FaCalendarCheck,FaPlane } from "react-icons/fa";
+import { HiUsers } from "react-icons/hi";
 
-function MenuLa({content}) {
+
+function MenuLa({ content }) {
   const [openMenu, setOpenMenu] = useState(null);
+  const [isOn, setIsOn] = useState(false);
 
   const toggleMenu = (menu) => {
     setOpenMenu(openMenu === menu ? null : menu);
@@ -19,8 +26,9 @@ function MenuLa({content}) {
         </div>
         <div className="menu">
           <ul>
-            <li><p className='op' href="#dashboard">Dashboard</p></li>
+            <li><MdDashboard/><p className='op' href="#dashboard">Dashboard</p></li>
             <li>
+              <FaUser/>
               <p className="op" onClick={() => toggleMenu('usuarios')}>Usuarios</p>
               <ul className={`sub-menu ${openMenu === 'usuarios' ? 'show' : ''}`}>
                 <li><a href="#gestion-usuarios">Gestión de Usuarios</a></li>
@@ -28,6 +36,7 @@ function MenuLa({content}) {
               </ul>
             </li>
             <li>
+              <HiUsers/>
               <p className="op" onClick={() => toggleMenu('clientes')}>Clientes</p>
               <ul className={`sub-menu ${openMenu === 'clientes' ? 'show' : ''}`}>
                 <li><a href="#gestion-clientes">Gestión de Clientes</a></li>
@@ -36,6 +45,7 @@ function MenuLa({content}) {
               </ul>
             </li>
             <li>
+              <FaCalendarCheck/>
               <p className="op" onClick={() => toggleMenu('reservas')}>Reservas</p>
               <ul className={`sub-menu ${openMenu === 'reservas' ? 'show' : ''}`}>
                 <li><a href="#crear-reserva">Crear Reserva</a></li>
@@ -44,6 +54,7 @@ function MenuLa({content}) {
               </ul>
             </li>
             <li>
+              <MdPayments/>
               <p className="op" onClick={() => toggleMenu('pagos')}>Pagos</p>
               <ul className={`sub-menu ${openMenu === 'pagos' ? 'show' : ''}`}>
                 <li><a href="#opciones-pago">Opciones de Pago</a></li>
@@ -51,6 +62,7 @@ function MenuLa({content}) {
               </ul>
             </li>
             <li>
+              <FaPlane />
               <p className="op" onClick={() => toggleMenu('aeropuertos-servicios')}>Aeropuertos y Servicios</p>
               <ul className={`sub-menu ${openMenu === 'aeropuertos-servicios' ? 'show' : ''}`}>
                 <li><a href="#gestion-aeropuertos">Gestión de Aeropuertos</a></li>
@@ -58,6 +70,7 @@ function MenuLa({content}) {
               </ul>
             </li>
             <li>
+              <MdDesignServices/>
               <p className="op" onClick={() => toggleMenu('servicios-adicionales')}>Servicios Adicionales</p>
               <ul className={`sub-menu ${openMenu === 'servicios-adicionales' ? 'show' : ''}`}>
                 <li><a href="#estacionamiento">Estacionamiento</a></li>
@@ -86,7 +99,10 @@ function MenuLa({content}) {
       <div className='derecha'>
         <div className="horizontal">
           <p>Sistema de la página</p>
-          <IoSettingsSharp />
+          <div className="right">
+            <CustomizedSwitches/>
+            <IoSettingsSharp />
+          </div>
         </div>
         <div className='resto'>
           {content}

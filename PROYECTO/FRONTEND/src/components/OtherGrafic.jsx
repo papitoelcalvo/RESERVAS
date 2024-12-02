@@ -7,8 +7,10 @@ import Circle from './Circle';
 const OtherGrafic = () => {
   return (
     <div className='con'>
-      <h1>Bienvenido a la Página Principal</h1>
+      <div className="letter">
       <p>¡Has iniciado sesión con éxito!</p>
+      <p>jkdlajffdkljgfkdljgfklj</p>
+      </div>
         <Circle/>
     </div>
   );

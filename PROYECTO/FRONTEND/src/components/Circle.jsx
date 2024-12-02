@@ -7,13 +7,13 @@ export default function Circle() {
       series={[
         {
           data: [
-            { id: 0, value: 10, label: 'series A' },
-            { id: 1, value: 15, label: 'series B' },
-            { id: 2, value: 20, label: 'series C' },
+            { id: 0, value: 200, label: 'series A', color: 'red' },
+            { id: 1, value: 200, label: 'series B', color: 'blue' },
+            { id: 2, value: 200, label: 'series C', color: 'green' },
           ],
         },
       ]}
-      width={300}
+      width={350}
       height={140}
     />
   );

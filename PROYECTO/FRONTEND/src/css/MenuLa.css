@@ -8,7 +8,7 @@
 }
 
 .lateral{
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     width: 16%;
     height: 100vh;
     color: white;
@@ -57,20 +57,22 @@
     align-items: center;
     justify-content: space-between;
     color: white;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     width: 98%;
     padding: 0 16px;
     height: 6%;
     font-size: 25px;
 }
 
-.derecha{
+  .derecha{
     width: 84%;
     height: 100vh;
-}
+  }
 
+  .right{
+    display: flex;
+  }
 
-  
   .menu ul {
     list-style-type: none;
     padding: 0;
@@ -79,6 +81,12 @@
   
   .menu ul li {
     position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .menu ul li p{
+    margin-left: 3%;
   }
   
   .menu ul li a {
@@ -112,6 +120,10 @@
     width: 99%;
     padding: 0.5%;
   }
+
+/* src/css/MenuLa.css */
+
+
   
 
   

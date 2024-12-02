@@ -71,9 +71,10 @@ const lineChartsParams = {
       data: UKGDPperCapita,
       showMark: false,
     },
+    
   ],
   style: { backgroundColor: 'white'},
-  width: 660,
+  width: 610,
   height: 250,
 };
 

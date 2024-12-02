@@ -1,12 +1,11 @@
 {
   "Version": 1,
-  "Hash": "GmA77ArA2vLX7bXkOEJy1l7r/WnKZZ2uAFOCm6DgGME=",
+  "Hash": "rua3chM07FLLtJWvx9y1MaMOmaotvdwwFZSutZ14IEg=",
   "Source": "BACKEND",
   "BasePath": "_content/BACKEND",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": [],
-  "Endpoints": []
+  "Assets": []
 }

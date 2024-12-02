@@ -16,8 +16,9 @@ const xLabels = [
 export default function Grafic() {
   return (
     <BarChart
-      width={500}
-      height={300}
+      style={{ backgroundColor: 'white' }}
+      width={950}
+      height={400}
       series={[
         { data: pData, label: 'pv', id: 'pvId' },
         { data: uData, label: 'uv', id: 'uvId' },

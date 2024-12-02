@@ -1,114 +1,165 @@
 /* src/App.css */
 .App {
-    text-align: center;
-    width: 100%;
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url(../assets/fon2.webp);
-    justify-content: center;
-    align-items: center;
-    display: flex;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../assets/fon2.webp);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.error {
+  color: black;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(223, 221, 221);
+  font-weight: 700;
+}
+
+.login-container {
+  color: rgb(223, 221, 221);
+  width: 300px;
+  margin: 0 auto;
+  backdrop-filter: blur(20px);
+  padding: 15px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  font-size: 20px;
+  margin: 8px 0px 0px 120px;
+}
+
+label[for="username"], label[for="password"], label[for="email"] {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  position: absolute;
+  margin: 10px 0px 0px 10px;
+  transition: all 0.3s ease;
+  transform-origin: left center;
+}
+
+input[type="text"], input[type="password"], input[type="email"] {
+  width: 100%;
+  height: 37px;
+  box-sizing: border-box;
+  display: flex;
+  background: none;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #b700ff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  margin-top: 5%;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #5f044b;
+}
+
+.reme {
+  display: flex;
+}
+
+.R_password {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10% 0% 2% 0%;
+}
+
+/* Estilos adicionales para cuando el input de username, password o email está enfocado */
+.form-group.focused label {
+  top: -20px;
+  left: 10%;
+  transform: translateX(-50%) scale(0.8);
+}
+
+.form-group.focused .icon {
+  opacity: 0.2;
+}
+
+/* Estilos adicionales para cuando los inputs de username, password o email están llenos */
+input#username:valid ~ label[for="username"],
+input#password:valid ~ label[for="password"],
+input#email:valid ~ label[for="email"] {
+  opacity: 0;
+}
+
+/* Media queries para dispositivos móviles */
+@media (max-width: 768px) {
+  .App {
+    flex-direction: column;
+    padding: 20px;
   }
-  
-  .error{
-    color: black;
-  }
-  
-  h2{
-    font-size: 35px;
-  }
-  
-  a{
-    text-decoration: none;
-    color: rgb(223, 221, 221);
-    font-weight: 700;
-  }
-  
+
   .login-container {
-    color: rgb(223, 221, 221);
-    width: 300px;
-    margin: 0 auto;
-    backdrop-filter: blur(20px);
-    padding: 15px;
-    border-radius: 15px;
-    overflow: hidden;
-  }
-  
-  .form-group {
-    margin-bottom: 15px;
-    position: relative;
-  }
-  
-  .icon {
-    position: absolute;
-    font-size: 20px;
-    margin: 8px 0px 0px 120px;
-  }
-  
-  label[for="username"], label[for="password"], label[for="email"] {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-    position: absolute;
-    margin: 10px 0px 0px 10px;
-    transition: all 0.3s ease;
-    transform-origin: left center;
-  }
-  
-  input[type="text"], input[type="password"], input[type="email"] {
     width: 100%;
-    height: 37px;
-    box-sizing: border-box;
-    display: flex;
-    background: none;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    padding: 10px;
-    outline: none;
+    margin: 20px;
+    padding: 20px;
   }
-  
+
+  .form-group .icon {
+    font-size: 16px;
+    margin: 8px 0px 0px 10px;
+  }
+
+  .R_password {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10% 0% 4% 0%;
+  }
+
+  .R_password .reme,
+  .R_password a {
+    margin: 5px 0;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
   button {
-    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-container {
     padding: 10px;
-    background-color: #b700ff;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    margin-top: 5%;
-    cursor: pointer;
   }
-  
-  button:hover {
-    background-color: #5f044b;
+
+  .form-group .icon {
+    font-size: 14px;
   }
-  
-  .reme{
-    display: flex;
+
+  h2 {
+    font-size: 24px;
   }
-  
-  .R_password{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 10% 0% 2% 0%;
-  }
-  
-  /* Estilos adicionales para cuando el input de username, password o email está enfocado */
-  .form-group.focused label {
-    top: -20px; /* Mover el label al borde superior */
-    left: 10%;  /* Mover el label al centro horizontalmente */
-    transform: translateX(-50%) scale(0.8); /* Centramos y reducimos el tamaño del label */
-  }
-  
-  .form-group.focused .icon {
-    opacity: 0.2; /* Hacer el icono semi-transparente */
-  }
-  
-  /* Estilos adicionales para cuando los inputs de username, password o email están llenos */
-  input#username:valid ~ label[for="username"],
-  input#password:valid ~ label[for="password"],
-  input#email:valid ~ label[for="email"] {
-    opacity: 0;
-  }
-  
+}

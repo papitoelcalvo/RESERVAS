@@ -57,23 +57,24 @@ const GermanyGDPperCapita = [
 const lineChartsParams = {
   series: [
     {
-      label: 'French GDP per capita',
+      label: '',
       data: FranceGDPperCapita,
       showMark: false,
     },
     {
-      label: 'German GDP per capita',
+      label: '',
       data: GermanyGDPperCapita,
       showMark: false,
     },
     {
-      label: 'UK GDP per capita',
+      label: '',
       data: UKGDPperCapita,
       showMark: false,
     },
   ],
-  width: 600,
-  height: 400,
+  style: { backgroundColor: 'white'},
+  width: 660,
+  height: 250,
 };
 
 const yearFormatter = (date) => date.getFullYear().toString();

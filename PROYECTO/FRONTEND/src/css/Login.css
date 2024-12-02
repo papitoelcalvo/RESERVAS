@@ -1,4 +1,6 @@
 /* src/App.css */
+
+/* Estilos generales para el contenedor */
 .App {
   text-align: center;
   width: 100%;
@@ -11,21 +13,21 @@
   display: flex;
 }
 
-.error{
+.error {
   color: black;
-
 }
 
-h2{
+h2 {
   font-size: 35px;
 }
 
-a{
+a {
   text-decoration: none;
   color: rgb(223, 221, 221);
   font-weight: 700;
 }
 
+/* Estilos para el contenedor del login */
 .login-container {
   color: rgb(223, 221, 221);
   width: 300px;
@@ -36,6 +38,7 @@ a{
   overflow: hidden;
 }
 
+/* Estilos para los grupos de formulario */
 .form-group {
   margin-bottom: 15px;
   position: relative;
@@ -47,6 +50,7 @@ a{
   margin: 8px 0px 0px 120px;
 }
 
+/* Estilos para las etiquetas */
 label[for="username"], label[for="password"] {
   display: block;
   font-weight: bold;
@@ -57,6 +61,7 @@ label[for="username"], label[for="password"] {
   transform-origin: left center;
 }
 
+/* Estilos para los campos de entrada */
 input[type="text"], input[type="password"] {
   width: 100%;
   height: 37px;
@@ -65,10 +70,11 @@ input[type="text"], input[type="password"] {
   background: none;
   border: 1px solid #ccc;
   border-radius: 10px;
-  padding: 10px; /* Añadido para darle espacio al label */
-  outline: none; /* Deshabilitar el borde de enfoque */
+  padding: 10px;
+  outline: none;
 }
 
+/* Estilos para los botones */
 button {
   width: 100%;
   padding: 10px;
@@ -84,12 +90,12 @@ button:hover {
   background-color: #5f044b;
 }
 
-.reme{
+/* Estilos para los checkboxes y enlaces */
+.reme {
   display: flex;
-  
 }
 
-.R_password{
+.R_password {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -98,18 +104,53 @@ button:hover {
 
 /* Estilos adicionales para cuando el input de username o password está enfocado */
 .form-group.focused label {
-  top: -20px; /* Mover el label al borde superior */
-  left: 10%;  /* Mover el label al centro horizontalmente */
-  transform: translateX(-50%) scale(0.8); /* Centramos y reducimos el tamaño del label */
-
+  top: -20px;
+  left: 10%;
+  transform: translateX(-50%) scale(0.8);
 }
 
 .form-group.focused .icon {
-  opacity: 0.2; /* Hacer el icono semi-transparente */
+  opacity: 0.2;
 }
 
 /* Estilos adicionales para cuando los inputs de username o password están llenos */
 input#username:valid ~ label[for="username"],
 input#password:valid ~ label[for="password"] {
   opacity: 0;
+}
+
+/* Media queries para dispositivos móviles */
+@media (max-width: 768px) {
+  .App {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .login-container {
+    width: 100%;
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .part2 {
+    font-size: 300%;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  button {
+    margin-top: 15px;
+  }
+
+  .R_password {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .R_password .reme,
+  .R_password a {
+    margin: 5px 0;
+  }
 }

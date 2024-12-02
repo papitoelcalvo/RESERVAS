@@ -4,6 +4,7 @@ import MenuLa from '../components/MenuLa';
 import Grafic from '../components/Grafic'
 import GraLine from '../components/GraLine'
 import BruseBanner from '../components/BruseBanner';
+import OtherGrafic from '../components/OtherGrafic';
 import '../css/Dashboard.css'
 import { IoMdSettings } from "react-icons/io";
 import { AiFillProduct } from "react-icons/ai";
@@ -13,7 +14,7 @@ import { FaBuilding } from "react-icons/fa6";
 
 const Dashboard = () => {
   return (
-    <div>
+    <div className='ap'>
       <MenuLa 
       
       content={
@@ -30,10 +31,13 @@ const Dashboard = () => {
             <Grafic/>
             <div className='medium-leff'>
               <GraLine/>
+              <OtherGrafic/>
             </div>
           </div>
           <div className='off'>
-
+            <div className="off-leff">
+              
+            </div>
           </div>
         </div>
 

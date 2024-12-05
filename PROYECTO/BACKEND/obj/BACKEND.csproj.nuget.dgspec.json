@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lab 02\\documents\\RESERVAS\\PROYECTO\\BACKEND\\BACKEND.csproj": {}
+    "C:\\Users\\Lab 02\\Documents\\RESERVAS\\PROYECTO\\BACKEND\\BACKEND.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lab 02\\documents\\RESERVAS\\PROYECTO\\BACKEND\\BACKEND.csproj": {
+    "C:\\Users\\Lab 02\\Documents\\RESERVAS\\PROYECTO\\BACKEND\\BACKEND.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lab 02\\documents\\RESERVAS\\PROYECTO\\BACKEND\\BACKEND.csproj",
+        "projectUniqueName": "C:\\Users\\Lab 02\\Documents\\RESERVAS\\PROYECTO\\BACKEND\\BACKEND.csproj",
         "projectName": "BACKEND",
-        "projectPath": "C:\\Users\\Lab 02\\documents\\RESERVAS\\PROYECTO\\BACKEND\\BACKEND.csproj",
+        "projectPath": "C:\\Users\\Lab 02\\Documents\\RESERVAS\\PROYECTO\\BACKEND\\BACKEND.csproj",
         "packagesPath": "C:\\Users\\Lab 02\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lab 02\\documents\\RESERVAS\\PROYECTO\\BACKEND\\obj\\",
+        "outputPath": "C:\\Users\\Lab 02\\Documents\\RESERVAS\\PROYECTO\\BACKEND\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Lab 02\\AppData\\Roaming\\NuGet\\NuGet.Config",

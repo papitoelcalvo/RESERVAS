@@ -1,0 +1,4 @@
+<!-- Guarda este SVG como wave-border.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 20" preserveAspectRatio="none">
+  <path d="M0,10 Q50,20 100,10 T200,10 V20 H0 Z" fill="#000" />
+</svg>

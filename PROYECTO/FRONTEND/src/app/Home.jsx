@@ -1,11 +1,11 @@
-// src/app/Home.jsx
 import React from 'react';
-
+import Navbar from '../components/Navbar';
+import CarouselComponent from '../components/CarouselComponent';
 const Home = () => {
   return (
     <div>
-      <h1>Bienvenido a la Página Principal</h1>
-      <p>¡Has iniciado sesión con éxito!</p>
+      <Navbar/>
+      <CarouselComponent/>
     </div>
   );
 };

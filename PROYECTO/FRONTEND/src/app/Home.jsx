@@ -2,25 +2,26 @@ import React from 'react';
 import Navbar from '../components/Navbar';
 import CarouselComponent from '../components/CarouselComponent';
 import '../css/Home.css';
+import Exa from '../components/Exa';
 const Home = () => {
   return (
     <div>
       <Navbar/>
       <div className='en-carru'>
-        <div className='pr'>
-          <h1>Reserva Fácil y Rápido</h1>
-          <h2>Planifica tu próxima experiencia con solo unos clics, y disfruta de un servicio excepcional que se adapta a tus necesidades y estilo de vida.</h2>
-        </div>
-        <div className="sep"></div>
-        <div className='sd'>
-          <p>Nuestra página de reserva está diseñada para ofrecer una experiencia sencilla y eficiente a nuestros usuarios. Aquí podrás explorar todos nuestros servicios disponibles, desde sesiones de spa y tratamientos de belleza, hasta reservas en los mejores restaurantes de la ciudad. Cada servicio está detallado con información clara y precisa para que puedas tomar decisiones informadas antes de realizar tu reserva.</p>
-          <p>Al acceder a la sección de "Lugares", tendrás acceso a una lista de nuestras ubicaciones destacadas, completas con descripciones, fotos y mapas interactivos. Esto te permitirá visualizar y elegir el lugar más conveniente y adecuado para tus necesidades. Queremos que cada visita sea una experiencia excepcional, y por eso ofrecemos toda la información necesaria para que puedas planificar tu visita sin complicaciones.</p>
-          <p>Nuestra sección de "Promociones" te mantendrá al día con las últimas ofertas y descuentos exclusivos. No importa si eres un cliente nuevo o recurrente, siempre encontrarás algo especial para ti. Además, nuestro sistema de reservas es intuitivo y rápido, permitiéndote completar tu reserva en cuestión de minutos desde cualquier dispositivo. Nos esforzamos por brindarte la mejor experiencia posible, facilitando cada paso del proceso de reserva. ¡Explora, reserva y disfruta!</p>
+        <div className='ler'>
+          <p></p>
+          <h1 className='tit'>Reserva tu vaina ahora porque camaron que se duerme se lo mete otro camaron</h1>
+          <p className='parr'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam inventore quod harum obcaecati placeat aspernatur fugiat, debitis provident adipisci explicabo corrupti, vel minima magni, excepturi deserunt. Ex cum eos at. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod culpa id cupiditate omnis eligendi fugit? Dolorem quasi nobis eos blanditiis esse totam quae. Molestias, maxime nulla magni ratione quis doloremque?</p>
+          <button className='lear'>READ MORE</button>
         </div>
       </div>
       <CarouselComponent/>
       <div className='re'>
-        <h1>fdsdsd</h1>
+        <div className='exas'>
+          <Exa/>
+          <Exa/>
+          <Exa/>
+        </div>
       </div>
     </div>
   );

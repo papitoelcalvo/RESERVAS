@@ -23,10 +23,14 @@ function Navbar() {
         </div>
         <div className='lo'>
           <div className='ic'>
+            <a href="https://www.instagram.com/">
             <FaSquareInstagram className='insta' />
+            </a>
+            <a href="https://web.whatsapp.com/">
             <IoLogoWhatsapp className='whatsapp' />
+            </a>
           </div>
-          <p>sign in</p>
+          <p><NavLink to='/'>sign in</NavLink></p>
         </div>
       </div>
     </div>

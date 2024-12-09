@@ -1,10 +1,11 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
+import '../css/Service.css'
 const Service = () => {
   return (
     <div>
       <Navbar/>
-      <h1>Service</h1>
+      <h1 className='ti'>Service</h1>
     </div>
   );
 };

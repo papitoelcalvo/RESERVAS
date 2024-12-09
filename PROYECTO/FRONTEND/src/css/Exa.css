@@ -1,0 +1,33 @@
+.hexagono {
+    position: relative;
+    width: 150px;
+    height: 75px;
+    background-color: #4CAF50;
+    margin: 5%;
+  }
+  
+  .hexagono:before,
+  .hexagono:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+  }
+  
+  .hexagono:before {
+    bottom: 100%;
+    border-bottom: 50px solid #4CAF50;
+  }
+  
+  .hexagono:after {
+    top: 100%;
+    width: 0;
+    border-top: 50px solid #4CAF50;
+  }
+  
+  .icono {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  

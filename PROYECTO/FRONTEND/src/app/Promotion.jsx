@@ -1,10 +1,11 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
+import '../css/Promotion.css'
 const Promotion = () => {
   return (
     <div>
       <Navbar/>
-      <h1>promotion</h1>
+      <h1 className='ti'>promotion</h1>
     </div>
   );
 };

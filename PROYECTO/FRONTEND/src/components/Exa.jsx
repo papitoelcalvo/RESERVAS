@@ -1,10 +1,14 @@
 import React from 'react';
 import '../css/Exa.css';
 
-function Exa({ icono }) {
+function Exa({ icono , defin, ser}) {
   return (
-    <div className='hexagono'>
-      {icono ? <img src={icono} alt="Icono" className='icono' /> : <p>No hay ícono disponible</p>}
+    <div className='ex'>
+      <div className='hexagono'>
+        {icono}
+      </div>
+      <h2 className='tt'>{ser}</h2>
+      <p className='def'>{defin}</p>
     </div>
   );
 }

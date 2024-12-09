@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar';
 import CarouselComponent from '../components/CarouselComponent';
 import '../css/Home.css';
 import Exa from '../components/Exa';
+import { FaClipboardCheck,FaChartPie,FaFingerprint } from "react-icons/fa";
 const Home = () => {
   return (
     <div>
@@ -18,10 +19,11 @@ const Home = () => {
       <CarouselComponent/>
       <div className='re'>
         <div className='exas'>
-          <Exa/>
-          <Exa/>
-          <Exa/>
+          <Exa icono={<FaClipboardCheck/>} ser='Service 1' defin='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam inventore quod harum obcaecLorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam inventore quod harum obcaec'/>
+          <Exa icono={<FaChartPie/>} ser='Service 2' defin='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam inventore quod harum obcaecLorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam inventore quod harum obcaec'/>
+          <Exa icono={<FaFingerprint/>} ser='Service 3' defin='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam inventore quod harum obcaecLorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam inventore quod harum obcaec'/>
         </div>
+        <div className='spr'></div>
       </div>
     </div>
   );

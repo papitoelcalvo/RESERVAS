@@ -1,0 +1,45 @@
+.re{
+    margin-top: 92vh;
+}
+
+.en-carru{
+    background-color: rgba(0, 0, 0, 0.466);
+    position: absolute;
+    z-index: 1;
+    margin-top: 14vh;
+    width: 90%;
+    height: 80vh;
+    margin-left: 5%;
+    color: white;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sep{
+    border: solid 1px white;
+    height: 90%;
+    margin-top: 2%;
+}
+
+.pr{
+    width: 55%;
+    border-radius: 25px 0px 0px 25px;
+    padding: 2%;
+}
+
+.pr h1{
+    font-size: 4em;
+    margin-bottom: 10%;
+}
+
+.pr h2{
+    font-size: 2.5em;
+}
+
+.sd{
+    width: 40%;
+    border-radius: 0px 25px 25px 0px;
+    padding: 2%;
+    font-size: 1.6em;
+}

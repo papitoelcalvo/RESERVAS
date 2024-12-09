@@ -1,27 +1,78 @@
+/* src/css/Navbar.css */
 .nab {
-    display: flex;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.466);
-    height: 8vh;
-    position: absolute;
-    z-index: 100;
-  }
+  display: flex;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.466);
+  height: 8vh;
+  position: absolute;
+  z-index: 1000; /* Aumenta el z-index para asegurarte de que esté encima de otros elementos */
+  top: 0; /* Asegúrate de que esté en la parte superior */
+  left: 0; /* Asegúrate de que cubra todo el ancho de la ventana */
+  justify-content: space-between;
+}
 
-  .nab::before,.nab::after{
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 25px;
-    height: 50px;
-    background: url(../assets/bord.svg);
-    background-position: 0 25px;
-    background-repeat: repeat-x;
-    background-size: 50px 50px;
-  }
-  
-  .logoo {
-    margin: 0.4%;
-    border-radius: 50%;
-  }
-  
+.opt{
+  width: 45%;
+  display: flex;
+  margin-left: 10%;
+}
+
+.list{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  margin: 0;
+  width: 100%;
+  padding: 0;
+}
+
+.li{
+  color: white;
+  font-size: 2em;
+  list-style: none;
+  border-bottom: solid 3px transparent;
+}
+
+.li a{
+  font-weight: 100;
+}
+
+.li:hover, .active{
+  border-bottom: solid 3px white;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.li a:hover, .active{
+  color: rgb(153, 153, 153);
+}
+
+
+.lo:hover{
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.lo{
+  height: 100%;
+  width: 13%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 2em;
+  color: white;
+}
+
+.ic{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  width: 30%;
+  justify-content: space-between;
+}
+
+.logoo {
+  margin: 0.4%;
+  border-radius: 50%;
+}

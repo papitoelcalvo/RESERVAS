@@ -4,6 +4,10 @@ import Login from "../app/Login";
 import System from "../app/Dashboard";
 import Home from "../app/Home";
 import Register from "../app/Register";
+import Places from "../app/Places";
+import Promotion from "../app/Promotion";
+import Service from "../app/Service";
+import About from "../app/About";
 
 import MenuLa from "../components/MenuLa";
 
@@ -16,6 +20,10 @@ const Path = () => {
         <Route path="/home" element={<Home />} />
         <Route path="/menu" element={<MenuLa />} />
         <Route path="/register" element={<Register/>}/>
+        <Route path="/places" element={<Places/>}/>
+        <Route path="/promotion" element={<Promotion/>}/>
+        <Route path="/service" element={<Service/>}/>
+        <Route path="/about" element={<About/>}/>
         <Route path="/" element={<Navigate to="/login" replace />} />
         <Route
           path="*"
